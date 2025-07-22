@@ -1,34 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>���� ��ҽÿ�����</title>
+  <title>누리 어소시에이츠</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
-    header { text-align: center; margin-bottom: 30px; }
-    h1 { color: #2c3e50; }
-    p { line-height: 1.5; }
-    footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #888; }
+    /* 기본 스타일 */
+    body {
+      font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    /* 컨테이너 중앙 정렬 및 최대 너비 지정 */
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      padding: 40px 60px;
+    }
+    /* 제목 */
+    h1 {
+      font-size: 3.2em;
+      color: #004080;
+      margin-bottom: 10px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    /* 서브 타이틀 */
+    .subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+    /* 공지사항 박스 */
+    .notice-box {
+      border-top: 3px solid #004080;
+      padding-top: 20px;
+    }
+    /* 공지사항 제목 */
+    .notice-box h2 {
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      color: #004080;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+    /* 공지사항 리스트 */
+    .notice-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .notice-box li {
+      padding: 15px 20px;
+      margin-bottom: 12px;
+      background: #f9faff;
+      border-left: 6px solid #0074d9;
+      cursor: pointer;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+      font-size: 1.1em;
+      color: #004080;
+      border-radius: 5px;
+    }
+    .notice-box li:hover {
+      background-color: #e3f0ff;
+      border-color: #005bb5;
+    }
+    /* 날짜 등 작은 정보 넣기용 */
+    .notice-date {
+      float: right;
+      font-size: 0.9em;
+      color: #999;
+    }
+    /* 반응형 간단 처리 */
+    @media(max-width: 600px) {
+      .container {
+        padding: 20px 30px;
+        margin: 20px;
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      .notice-box li {
+        font-size: 1em;
+        padding: 12px 15px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>���� ��ҽÿ����� Ȩ������</h1>
-  </header>
+  <div class="container">
+    <h1>누리 어소시에이츠</h1>
+    <div class="subtitle">Nuri Associates</div>
 
-  <section>
-    <h2>�Ұ�</h2>
-    <p>���� ��ҽÿ����� Ȩ�������Դϴ�.</p>
-  </section>
+    <div class="notice-box">
+      <h2>공지사항 &amp; 사업보고 및 주요 공시</h2>
+      <ul>
 
-  <section>
-    <h2>����ó</h2>
-    <p>�̸���: cvblop@naver.com</p>
-  </section>
+        <li>
+ <a href="https://cafe.naver.com" target="_blank" rel="noopener noreferrer">누리 어소시에이츠 설립안내</a>
+<span class="notice-date">2025-07-22</span>
+</li>
 
-  <footer>
-    &copy; 2025 ���� ��ҽÿ�����
-  </footer>
-</body>
-</html>
+<li>
+      <a href="https://naver.com" target="_blank" rel="noopener noreferrer">2025년 하반기 사업보고서(준비중)</a>
+      <span class="notice-date">2025-00-00</span>
+    </li>
+
+        <li>준비중 <span class="notice-date">2025-00-00</span></li>
+        <li>준비중 <span class="notice-date">2025-00-00</span></li>
+        <li>준비중 <span class="notice-date">2025-00-00</span></li>
+        <li>준비중 <span class="notice-date">2025-00-00</span></li>
+      </ul>
+    </div>
+  </div>
